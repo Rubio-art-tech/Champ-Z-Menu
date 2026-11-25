@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Champ'Z Foodie — Food delivered to your door</title>
+  <meta name="description" content="Pre-order chef-crafted comfort food from Champ'Z Foodie. Cooked to order and served 2–3 days later, delivered within Guihulngan City, Vallehermoso and San Carlos City." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/shop.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%23F26B21'/%3E%3Cpath d='M32 44a12 12 0 0 1 4-22 16 16 0 0 1 28 0 12 12 0 0 1 4 22v18H32z' fill='%23FFF6EC'/%3E%3Cpath d='M32 66h36' stroke='%23241C18' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body class="shop-body">
+  <a class="skip-link" href="#shopView">Skip to menu</a>
+
+  <div class="shop">
+    <header class="shop-header">
+      <div class="shop-header-inner">
+        <a class="shop-logo" href="#/" aria-label="Champ'Z Foodie home">
+          <img class="brand-logo" src="assets/images/champz-foodie-logo.webp" alt="" width="46" height="46" />
+          <span class="shop-logo-text">
+            <strong>Champ'Z Foodie</strong>
+            <small>Pizza &amp; delivery</small>
+          </span>
+        </a>
+
+        <nav class="shop-nav" aria-label="Main navigation">
+          <a href="#/" data-shop-nav="home">Home</a>
+          <a href="#/menu" data-shop-nav="menu">Menu</a>
+          <a href="#/about" data-shop-nav="about">About us</a>
+          <a href="#/contact" data-shop-nav="contact">Contact</a>
+        </nav>
+
+        <div class="shop-actions">
+          <a class="shop-social-btn" href="https://www.facebook.com/people/ChampZ-Foodie/100092515477245/"
+            target="_blank" rel="noopener" aria-label="Message us on Facebook">
+            <span data-icon="facebook"></span>
+            <span class="shop-social-text">Facebook</span>
+          </a>
+          <button class="shop-menu-btn" id="shopMenuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+            <span data-icon="menu"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="shop-main" id="shopView" tabindex="-1"></main>
+
+    <footer class="shop-footer">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="shop-logo" href="#/">
+            <img class="brand-logo" src="assets/images/champz-foodie-logo.webp" alt="" width="46" height="46" loading="lazy" />
+            <span class="shop-logo-text">
+              <strong>Champ'Z Foodie</strong>
+              <small>Pizza &amp; delivery</small>
+            </span>
+          </a>
+          <p>Chef-crafted comfort food from our kitchen in Guihulngan City, delivered fresh to your door in Guihulngan, Vallehermoso and San Carlos City only. Please order 2–3 days ahead.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><span data-icon="instagram"></span></a>
+            <a href="https://www.facebook.com/people/ChampZ-Foodie/100092515477245/" target="_blank" rel="noopener" aria-label="Facebook"><span data-icon="facebook"></span></a>
+            <a id="footerSocialEmail" href="mailto:hello@spiceroute.ph" aria-label="Email us"><span data-icon="mail"></span></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Explore</h3>
+          <a href="#/">Home</a>
+          <a href="#/menu">Full menu</a>
+          <a href="#/about">About us</a>
+          <a href="#/contact">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h3>Get in touch</h3>
+          <p class="footer-contact-line"><span data-icon="map-pin"></span><span id="footerAddress">Unit 4, 118 Dela Rosa Street<br />Guihulngan City, Negros Oriental</span></p>
+          <p class="footer-contact-line"><span data-icon="phone"></span><a id="footerPhone" href="tel:+639175550123">0917 555 0123</a></p>
+          <p class="footer-contact-line"><span data-icon="mail"></span><a id="footerEmail" href="mailto:hello@spiceroute.ph">hello@spiceroute.ph</a></p>
+          <p class="footer-contact-line"><span data-icon="clock"></span><span id="footerHours">Tue – Sun · 10:00 AM – 10:00 PM</span></p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Help</h3>
+          <a href="#/menu">Full menu</a>
+          <a href="#/contact">Delivery help</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© <span id="shopYear">2026</span> Champ'Z Foodie. All rights reserved.</span>
+        <span><a href="index.html">Admin console</a></span>
+      </div>
+    </footer>
+  </div>
+
+  <div class="shop-drawer" id="shopDrawer" hidden>
+    <div class="shop-drawer-panel" role="dialog" aria-modal="true" aria-label="Site navigation">
+      <div class="drawer-top">
+        <a class="shop-logo" href="#/">
+          <img class="brand-logo" src="assets/images/champz-foodie-logo.webp" alt="" width="46" height="46" />
+          <span class="shop-logo-text">
+            <strong>Champ'Z Foodie</strong>
+            <small>Pizza &amp; delivery</small>
+          </span>
+        </a>
+        <button class="drawer-close" id="shopDrawerClose" type="button" aria-label="Close menu">
+          <span data-icon="x"></span>
+        </button>
+      </div>
+
+      <nav class="drawer-nav" aria-label="Mobile navigation">
+        <a href="#/" data-shop-nav="home">Home <span data-icon="arrow-right"></span></a>
+        <a href="#/menu" data-shop-nav="menu">Menu <span data-icon="arrow-right"></span></a>
+        <a href="#/about" data-shop-nav="about">About us <span data-icon="arrow-right"></span></a>
+        <a href="#/contact" data-shop-nav="contact">Contact <span data-icon="arrow-right"></span></a>
+      </nav>
+
+      <p class="drawer-foot">Open <span id="drawerHours">Tue – Sun · 10:00 AM – 10:00 PM</span></p>
+    </div>
+  </div>
+
+  <div id="modalRoot"></div>
+  <div class="toast-root" id="toastRoot" aria-live="polite" aria-atomic="false"></div>
+
+  <script type="module" src="assets/js/shop.js"></script>
+</body>
+</html>
