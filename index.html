@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spice Route — Admin Console</title>
+  <meta name="description" content="Spice Route admin console: manage food products, prices, categories and the storefront menu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='26' fill='%23F26B21'/%3E%3Cpath d='M32 44a12 12 0 0 1 4-22 16 16 0 0 1 28 0 12 12 0 0 1 4 22v18H32z' fill='%23FFF6EC'/%3E%3Cpath d='M32 66h36' stroke='%23241C18' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="app" id="app" data-collapsed="false">
+    <div class="scrim" id="scrim" hidden></div>
+
+    <aside class="sidebar" id="sidebar" aria-label="Main navigation">
+      <div class="sidebar-head">
+        <a class="brand" href="#/dashboard" aria-label="Champ'Z Foodie admin home">
+          <img class="brand-logo" src="assets/images/champz-foodie-logo.webp" alt="Champ'Z Foodie logo" width="44" height="44" />
+          <span class="brand-text">
+            <strong>Champ'z Foodie</strong>
+            <small>Admin Console</small>
+          </span>
+        </a>
+        <button class="collapse-btn" id="collapseBtn" aria-label="Collapse sidebar" title="Collapse sidebar">
+          <span data-icon="chevrons-left"></span>
+        </button>
+        <button class="collapse-btn only-mobile" id="closeNavBtn" aria-label="Close navigation">
+          <span data-icon="x"></span>
+        </button>
+      </div>
+
+      <nav class="sidebar-nav">
+        <p class="nav-label"><span>Workspace</span></p>
+        <a class="nav-item" href="#/dashboard" data-nav="dashboard">
+          <span class="nav-icon" data-icon="layout-dashboard"></span>
+          <span class="nav-text">Dashboard</span>
+        </a>
+        <a class="nav-item" href="#/products" data-nav="products">
+          <span class="nav-icon" data-icon="utensils"></span>
+          <span class="nav-text">Product Management</span>
+          <span class="nav-badge" id="navProductCount">0</span>
+        </a>
+        <a class="nav-item" href="#/categories" data-nav="categories">
+          <span class="nav-icon" data-icon="tags"></span>
+          <span class="nav-text">Categories</span>
+        </a>
+
+        <p class="nav-label"><span>System</span></p>
+        <a class="nav-item" href="#/settings" data-nav="settings">
+          <span class="nav-icon" data-icon="sliders"></span>
+          <span class="nav-text">Settings</span>
+        </a>
+        <button class="nav-item nav-item--button" id="logoutBtn" type="button">
+          <span class="nav-icon" data-icon="log-out"></span>
+          <span class="nav-text">Logout</span>
+        </button>
+      </nav>
+
+      <div class="sidebar-foot">
+        <div class="menu-health" id="menuHealth">
+          <div class="menu-health-top">
+            <span class="menu-health-label">Menu availability</span>
+            <span class="menu-health-value" id="menuHealthValue">—</span>
+          </div>
+          <div class="menu-health-bar"><span id="menuHealthBar" style="width: 0%"></span></div>
+          <p class="menu-health-note">Keep at least 80% of dishes orderable.</p>
+        </div>
+        <button class="admin-card" type="button" id="sidebarAdmin">
+          <span class="avatar avatar--sm" id="sidebarAvatar">AR</span>
+          <span class="admin-card-text">
+            <strong id="sidebarAdminName">Ava Reyes</strong>
+            <small>Restaurant Admin</small>
+          </span>
+          <span class="admin-card-icon" data-icon="chevron-right"></span>
+        </button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn only-mobile" id="menuBtn" aria-label="Open navigation" type="button">
+          <span data-icon="menu"></span>
+        </button>
+
+        <div class="topbar-heading">
+          <p class="eyebrow" id="pageEyebrow">Overview</p>
+          <h1 id="pageTitle">Dashboard</h1>
+        </div>
+
+        <div class="topbar-actions">
+          <form class="topbar-search" id="globalSearch" role="search">
+            <span data-icon="search"></span>
+            <input type="search" id="globalSearchInput" placeholder="Search the menu…" aria-label="Search products" autocomplete="off" />
+          </form>
+          <button class="admin-chip" id="adminChip" type="button" aria-label="Open settings">
+            <span class="avatar" id="topbarAvatar">AR</span>
+            <span class="admin-chip-text">
+              <strong id="topbarAdminName">Ava Reyes</strong>
+              <small>Administrator</small>
+            </span>
+            <span class="admin-chip-icon" data-icon="chevron-down"></span>
+          </button>
+        </div>
+      </header>
+
+      <main class="view" id="view" tabindex="-1">
+        <noscript>
+          <div class="panel"><p>This admin console needs JavaScript enabled.</p></div>
+        </noscript>
+      </main>
+    </div>
+  </div>
+
+  <div id="authRoot" hidden></div>
+  <div id="modalRoot"></div>
+  <div class="toast-root" id="toastRoot" aria-live="polite" aria-atomic="false"></div>
+
+  <script type="module" src="assets/js/app.js"></script>
+</body>
+</html>
